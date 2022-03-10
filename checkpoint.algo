@@ -1,0 +1,23 @@
+ALGORITHM checkpoint/algo
+VAR
+    ch:string
+    i,a,b,c:integer
+  
+BEGIN
+    a:=0;
+    b:=1;
+    c:=0;
+    read(ch)  
+    WHILE(ch[i]<> "." ) DO
+        a=a+1;
+    IF (ch[i]=" ") THEN
+        b=b+1;
+    END_IF
+    IF (ch[i]="a" OR ch[i]="e" OR ch[i]="i" OR ch[i]="o" OR ch[i]="u" OR ch[i]="y") THEN
+    c=c+1;
+    END_IF
+    END_WHILE
+    write("nombre des charactères =",a);
+    write("nombre des mots=",b);
+    write("nombre des voyelles=",c);
+END
